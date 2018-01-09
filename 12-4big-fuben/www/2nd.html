@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>添加学生</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/2nd.css">
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div>
+            <span>学生信息管理系统</span>
+            <span>首页</span>
+            <span>学生管理</span>
+        </div>
+    </nav>
+    <div class="query">
+        <p>添加学生</p>
+    </div>
+
+
+    <div class="container">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">姓名：</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="姓名" name="username" required pattern="[\u4e00-\u9fa5]{1,5}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">年龄：</label>
+                <div class="col-sm-1">
+                <select class="form-control" name="age">
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                </select>
+            </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">联系方式：</label>
+                <div class="col-sm-2">
+                    <input type="text" class="form-control" placeholder="联系方式" name="phone" required pattern="[0-9]{11}">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">邮箱：</label>
+                <div class="col-sm-3">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="邮箱" name="email" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">个人介绍：</label>
+                <div class="col-sm-8">
+                        <textarea class="form-control" rows="6" placeholder="个人介绍" name="introduce"></textarea>
+                    </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-1">
+                        <button type="submit" class="btn btn-success">提交 </button>
+                </div>                  
+                </div>
+        </form>
+    </div>
+
+<section class="sec">
+    111
+</section>
+
+
+    <script src="jquery.js"></script>
+    <script src="bootstrap\js\bootstrap.min.js"></script>
+    <script src="js/2nd.js"></script>
+ 
+</body>
+
+</html>
